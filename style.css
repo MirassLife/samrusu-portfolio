@@ -1,0 +1,237 @@
+:root {
+    --background-colour: #000;
+    --font-family: 'Montserrat', sans-serif;
+    --font-color: rgb(236, 236, 235);
+}
+
+html,
+body {
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* *,
+*:before,
+*:after {
+    box-sizing: inherit;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+} */
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--background-colour);
+}
+
+h1 {
+    font-family: var(--font-family);
+    font-size: 4em;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: 2em;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+p {
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    font-weight: 400;
+    color: var(--font-color);
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+#hero-parallax {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+#cam-parallax {
+    height: 50vh;
+    overflow: hidden;
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.parallax-title {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transform: translate(50%, 0);
+}
+
+#hero-parallax,
+#cam-parallax .layer {
+    min-height: 800px;
+}
+
+.layer {
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+#hero-parallax>.layer-back {
+    background-image: url('./img/hero_back_compressed.png');
+}
+
+#hero-parallax>.layer-mid {
+    background-image: url('./img/hero_mid_compressed.png');
+}
+
+#hero-parallax>.layer-front {
+    background-image: url('./img/hero_front_compressed.png');
+}
+
+#cam-parallax>.layer-back {
+    background-image: url('./img/cam_back.webp');
+}
+
+#cam-parallax>.layer-front {
+    background-image: url('./img/cam_front.webp');
+}
+
+.divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+    transform: rotateY(180deg);
+}
+
+.divider-bottom .shape-fill {
+    fill: var(--background-colour);
+}
+
+.content-wrapper {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--background-colour);
+}
+
+.text-section {
+    position: relative;
+    height: 100vh;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-section>div>p {
+    text-align: center;
+}
+
+.text-section>div>h2 {
+    text-align: center;
+}
+
+#introduction {
+    flex-direction: column !important;
+}
+
+.image-section {
+    position: relative;
+    height: 100vh;
+    width: 100% !important;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    flex: 1;
+    height: 500px;
+}
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-height: 1080px;
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.video-section video {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.video-section h2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+    cursor: pointer;
+}
+
+.video-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
+}
+
+.video-overlay-bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
+}
+
+.title-section {
+    height: 100vh;
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

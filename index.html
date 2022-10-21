@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<title></title>
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
+			rel="stylesheet" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	</head>
+	<body>
+		<div id="hero-parallax">
+			<div class="layer-back layer hero-parallax" data-depth="0.10"></div>
+			<div class="layer-mid layer hero-parallax" data-depth="0.30"></div>
+			<div class="layer-front layer hero-parallax" data-depth="0.50"></div>
+			<div class="divider-bottom">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none">
+					<path
+						d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+						class="shape-fill"></path>
+				</svg>
+			</div>
+		</div>
+		<div class="parallax-title">
+			<h1 class="no-margin">Samuel Rusu</h1>
+			<h2>Videographer</h2>
+		</div>
+
+		<div class="content-wrapper">
+			<div id="introduction" class="text-section">
+				<div>
+					<h2>Hi.</h2>
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+						aliquip ex ea commodo consequat. Duis aute irure dolor in
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+						culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>
+			</div>
+
+			<div id="introduction-images" class="image-section">
+				<img id="intro-one" src="./img/intro_image_1.jpg" />
+				<img id="intro-two" src="./img/intro_image_2.JPG" />
+				<img id="intro-three" src="./img/intro_image_3.JPG" />
+			</div>
+
+			<div id="showreel-loop" class="video-section" style="margin: 50vh 0">
+				<h2>Click to see full showreel</h2>
+				<video autoplay muted loop>
+					<source src="./img/showreel_loop.webm" type="video/webm" />
+					Your browser does not support the video tag.
+				</video>
+				<div id="showreel-overlay" class="video-overlay"></div>
+				<div class="video-overlay-bg"></div>
+			</div>
+
+			<div id="what-i-offer" class="title-section">
+				<h2 id="text-1">Video Marketing is important.</h2>
+				<p id="text-2">
+					Video content provides a safe haven for an online audience to get the
+					right information, at the right time, and in an easy to consume way.
+				</p>
+				<p id="text-3">
+					This can offer your business a versatile and appealing solution to
+					help reach an broader online audience.
+				</p>
+			</div>
+
+			<div id="cam-parallax">
+				<div class="layer-back layer parallax" data-depth="0.10"></div>
+				<div class="layer-front layer parallax" data-depth="0.50"></div>
+				<!-- <div class="divider-bottom">
+					<svg
+						data-name="Layer 1"
+						xmlns="http://www.w3.org/2000/svg"
+						viewBox="0 0 1200 120"
+						preserveAspectRatio="none">
+						<path
+							d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+							class="shape-fill"></path>
+					</svg>
+				</div> -->
+			</div>
+
+			<div style="height: 100vh"></div>
+		</div>
+		<div id="cam-parallax">
+			<div class="layer-back layer parallax" data-depth="0.10"></div>
+			<div class="layer-front layer parallax" data-depth="0.50"></div>
+			<!-- <div class="divider-bottom">
+				<svg
+					data-name="Layer 1"
+					xmlns="http://www.w3.org/2000/svg"
+					viewBox="0 0 1200 120"
+					preserveAspectRatio="none">
+					<path
+						d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
+						class="shape-fill"></path>
+				</svg>
+			</div> -->
+		</div>
+
+		<script src="./script.js"></script>
+	</body>
+</html>
