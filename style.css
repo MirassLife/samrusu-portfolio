@@ -29,6 +29,7 @@ h1 {
     font-size: 4em;
     font-weight: 400;
     color: var(--font-color);
+    user-select: none;
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
     font-size: 2em;
     font-weight: 400;
     color: var(--font-color);
+    user-select: none;
 }
 
 p {
@@ -43,6 +45,7 @@ p {
     font-size: 1.2em;
     font-weight: 400;
     color: var(--font-color);
+    user-select: none;
 }
 
 .no-margin {
@@ -166,7 +169,7 @@ p {
 
 .image-section {
     position: relative;
-    height: 100vh;
+    height: 50vh;
     width: 100% !important;
     display: flex;
     gap: 20px;
@@ -189,22 +192,31 @@ p {
     justify-content: center;
 }
 
-.video-section video {
+.video-section>div {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    max-height: 1080px;
+    max-width: 1920px;
+}
+
+.video-section>div>video {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
-.video-section h2 {
+.video-section>div>h2 {
     position: absolute;
     height: 100%;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    pointer-events: none;
     z-index: 3;
-    cursor: pointer;
 }
 
 .video-overlay {
@@ -212,6 +224,7 @@ p {
     height: 100%;
     width: 100%;
     z-index: 2;
+    pointer-events: none;
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
     background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(255, 255, 255, 0) 100%);
@@ -222,16 +235,107 @@ p {
     height: 100%;
     width: 100%;
     z-index: 1;
+    pointer-events: none;
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
     background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
     background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 20%);
 }
 
 .title-section {
-    height: 100vh;
+    height: 75vh;
     width: 1400px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.portfolio-section {
+    position: relative;
+    height: 100vh;
+    width: 1400px;
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-section>div {
+    flex: 1;
+    width: 50%;
+}
+
+.portfolio-section>div>p {
+    width: 100%;
+}
+
+.video-hover {
+    position: relative;
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.video-hover:hover {
+    cursor: pointer;
+}
+
+.video-hover:hover>img {
+    opacity: 0 !important;
+    transition: opacity 0.5s;
+}
+
+.video-hover:hover>h2 {
+    opacity: 0 !important;
+    transition: opacity 0.5s;
+}
+
+.portfolio-section>.video-hover>img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.portfolio-section>.video-hover>video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.portfolio-section>.video-hover>h2 {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 3;
+    user-select: none;
+    transition: opacity 0.5s;
+}
+
+a.button {
+    color: var(--font-color);
+    border: solid 1px #FFF;
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: 1.2em;
+    transition: transform 0.2s ease-in-out;
+}
+
+a.button:hover {
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
 }

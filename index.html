@@ -10,6 +10,12 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+			integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap"
 			rel="stylesheet" />
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
@@ -42,13 +48,9 @@
 				<div>
 					<h2>Hi.</h2>
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-						ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-						aliquip ex ea commodo consequat. Duis aute irure dolor in
-						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-						pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-						culpa qui officia deserunt mollit anim id est laborum.
+						I am a photographer and videographer based in Basingstoke,
+						Hampshire. With 15 years of experience in the field, I can help you
+						take your marketing to the next level to boost your online presence.
 					</p>
 				</div>
 			</div>
@@ -59,17 +61,19 @@
 				<img id="intro-three" src="./img/intro_image_3.JPG" />
 			</div>
 
-			<div id="showreel-loop" class="video-section" style="margin: 50vh 0">
-				<h2>Click to see full showreel</h2>
-				<video autoplay muted loop>
-					<source src="./img/showreel_loop.webm" type="video/webm" />
-					Your browser does not support the video tag.
-				</video>
-				<div id="showreel-overlay" class="video-overlay"></div>
-				<div class="video-overlay-bg"></div>
+			<div id="showreel-loop" class="video-section" style="margin-top: 50vh">
+				<div>
+					<h2>Click to see full showreel</h2>
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.
+					</video>
+					<div id="showreel-overlay" class="video-overlay"></div>
+					<div class="video-overlay-bg"></div>
+				</div>
 			</div>
 
-			<div id="what-i-offer" class="title-section">
+			<div id="what-i-offer" class="title-section" style="margin-top: 10vh">
 				<h2 id="text-1">Video Marketing is important.</h2>
 				<p id="text-2">
 					Video content provides a safe haven for an online audience to get the
@@ -81,38 +85,124 @@
 				</p>
 			</div>
 
-			<div id="cam-parallax">
-				<div class="layer-back layer parallax" data-depth="0.10"></div>
-				<div class="layer-front layer parallax" data-depth="0.50"></div>
-				<!-- <div class="divider-bottom">
-					<svg
-						data-name="Layer 1"
-						xmlns="http://www.w3.org/2000/svg"
-						viewBox="0 0 1200 120"
-						preserveAspectRatio="none">
-						<path
-							d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-							class="shape-fill"></path>
-					</svg>
-				</div> -->
+			<div id="ben-james" class="portfolio-section">
+				<div>
+					<h1 class="no-margin">Ben James Tattoos</h1>
+					<p>
+						Ben is a local tattoo artist with an amazing talent that needed a
+						high quality promotional video. To achieve that, he asked me to
+						create a one minute video that fits Ben’s audience on social media.
+					</p>
+					<p style="text-align: right !important">
+						Hover for my showreel <i class="fa-solid fa-arrow-right"></i>
+					</p>
+				</div>
+				<div class="video-hover">
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.
+					</video>
+					<img src="./img/ben_james_hero.png" />
+				</div>
 			</div>
 
-			<div style="height: 100vh"></div>
-		</div>
-		<div id="cam-parallax">
-			<div class="layer-back layer parallax" data-depth="0.10"></div>
-			<div class="layer-front layer parallax" data-depth="0.50"></div>
-			<!-- <div class="divider-bottom">
-				<svg
-					data-name="Layer 1"
-					xmlns="http://www.w3.org/2000/svg"
-					viewBox="0 0 1200 120"
-					preserveAspectRatio="none">
-					<path
-						d="M1200 120L0 16.48 0 0 1200 0 1200 120z"
-						class="shape-fill"></path>
-				</svg>
-			</div> -->
+			<div id="nomadic-paddler" class="portfolio-section">
+				<div>
+					<h1 class="no-margin">Nomadic Paddler - Untamed Beasts</h1>
+					<p>
+						I have had the pleasure to meet David Haze (Nomadic Paddler) in the
+						early months of 2022 and I was completely inspired by his story.
+						David has broken 7 paddleboard world records and has set his sights
+						on an environmental journey round the Isle of Wight, before taking
+						on Europe in his Untamed Beasts challenge.
+					</p>
+					<p style="text-align: right !important">
+						Hover for my showreel <i class="fa-solid fa-arrow-right"></i>
+					</p>
+				</div>
+				<div class="video-hover">
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.
+					</video>
+					<img src="./img/nomadic_paddler_hero.png" />
+				</div>
+			</div>
+
+			<div id="i-remember" class="portfolio-section">
+				<div>
+					<h1 class="no-margin">I Remember - Short Film</h1>
+					<p>
+						Through my videography journey I got to meet wonderful people
+						including Kam Stevens, an amazing Director. He asked me to be
+						Director of Photography in his project “I Remember”, a short drama
+						film.
+					</p>
+					<p style="text-align: right !important">
+						Hover for my showreel <i class="fa-solid fa-arrow-right"></i>
+					</p>
+				</div>
+				<div class="video-hover">
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.</video
+					><img src="./img/i_remember_hero.png" />
+				</div>
+			</div>
+
+			<div id="vantage" class="portfolio-section">
+				<div>
+					<h1 class="no-margin">Vantage</h1>
+					<p>
+						Social Media is the main marketing platform for every business.
+						Having the right promotional short ads, like Vantage, presents your
+						product or service to your audience in a quick, concise and engaging
+						way.
+					</p>
+					<p style="text-align: right !important">
+						Hover for my showreel <i class="fa-solid fa-arrow-right"></i>
+					</p>
+				</div>
+				<div class="video-hover">
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.
+					</video>
+					<img src="./img/vantage_hero.png" />
+				</div>
+			</div>
+
+			<div id="shadow-automation" class="portfolio-section">
+				<div>
+					<h1 class="no-margin">The Shadow of Automation</h1>
+					<p>
+						An amazing project that I am proud to be a part of is the short film
+						“The Shadow of Automation” written and directed by Scott Clist. This
+						is a fan film prequel based on Albert Pyun's 1992 classic "Nemesis".
+					</p>
+					<p style="text-align: right !important">
+						Hover for my showreel <i class="fa-solid fa-arrow-right"></i>
+					</p>
+				</div>
+				<div class="video-hover">
+					<img src="./img/shadow_automation_hero.JPG" />
+					<video autoplay muted loop>
+						<source src="./img/showreel_loop.webm" type="video/webm" />
+						Your browser does not support the video tag.
+					</video>
+				</div>
+			</div>
+
+			<div class="title-section" style="height: 100vh !important">
+				<h1>Contact Me</h1>
+				<a
+					href="mailto:
+				samuel@rusu.me.uk"
+					target="_blank"
+					class="button"
+					>Email Me</a
+				>
+			</div>
 		</div>
 
 		<script src="./script.js"></script>

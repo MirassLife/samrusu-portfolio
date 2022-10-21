@@ -33,8 +33,7 @@ const introduction = gsap
 		scrollTrigger: {
 			trigger: '#introduction',
 			scrub: true,
-			pin: true,
-			start: 'center center',
+			start: 'top center',
 			end: '+=50%',
 			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
 		},
@@ -50,9 +49,8 @@ const introduction_images = gsap
 		scrollTrigger: {
 			trigger: '#introduction-images',
 			scrub: true,
-			pin: true,
-			start: 'center center',
-			end: '+=50%',
+			start: 'top center',
+			end: '+=25%',
 			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
 		},
 	})
@@ -75,11 +73,11 @@ const introduction_images = gsap
 const sectionThree = gsap
 	.timeline({
 		scrollTrigger: {
-			trigger: '#showreel-loop',
+			trigger: '#showreel-loop.video-section',
 			scrub: true,
 			pin: true,
 			start: 'center center',
-			end: '+=50%',
+			end: '+=25%',
 			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
 		},
 	})
@@ -109,10 +107,9 @@ const sectionThreeOverlay = gsap
 const sectionFour = gsap
 	.timeline({
 		scrollTrigger: {
-			trigger: '#what-i-offer',
+			trigger: '#showreel-loop',
 			scrub: true,
-			pin: true,
-			start: 'top top',
+			start: 'bottom center',
 			end: '+=50%',
 			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
 		},
@@ -129,6 +126,141 @@ const sectionFour = gsap
 		ease: 'none',
 	})
 	.from('#what-i-offer #text-3', {
+		opacity: 0,
+		ease: 'none',
+	});
+
+const portfolio_one = gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '#what-i-offer',
+			scrub: true,
+			start: 'bottom center',
+			end: '+=50%',
+			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
+		},
+	})
+
+	.from('#ben-james>div>h1', {
+		translateX: -200,
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#ben-james>div>p', {
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#ben-james>.video-hover', {
+		opacity: 0,
+		ease: 'none',
+	});
+
+const portfolio_two = gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '#ben-james',
+			scrub: true,
+			start: 'bottom center',
+			end: '+=50%',
+			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
+		},
+	})
+
+	.from('#nomadic-paddler>div>h1', {
+		translateX: -200,
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#nomadic-paddler>div>p', {
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#nomadic-paddler>.video-hover', {
+		opacity: 0,
+		ease: 'none',
+	});
+
+const portfolio_three = gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '#nomadic-paddler',
+			scrub: true,
+			start: 'bottom center',
+			end: '+=50%',
+			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
+		},
+	})
+
+	.from('#i-remember>div>h1', {
+		translateX: -200,
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#i-remember>div>p', {
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#i-remember>.video-hover', {
+		opacity: 0,
+		ease: 'none',
+	});
+
+const portfolio_four = gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '#i-remember',
+			scrub: true,
+			start: 'bottom center',
+			end: '+=50%',
+			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
+		},
+	})
+
+	.from('#vantage>div>h1', {
+		translateX: -200,
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#vantage>div>p', {
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#vantage>.video-hover', {
+		opacity: 0,
+		ease: 'none',
+	});
+
+const portfolio_five = gsap
+	.timeline({
+		scrollTrigger: {
+			trigger: '#vantage',
+			scrub: true,
+			start: 'bottom center',
+			end: '+=50%',
+			// markers: { startColor: 'green', endColor: 'red', fontSize: '12px' },
+		},
+	})
+
+	.from('#shadow-automation>div>h1', {
+		translateX: -200,
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#shadow-automation>div>p', {
+		opacity: 0,
+		ease: 'none',
+	})
+
+	.from('#shadow-automation>.video-hover', {
 		opacity: 0,
 		ease: 'none',
 	});
